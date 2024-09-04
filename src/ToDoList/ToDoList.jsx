@@ -25,11 +25,13 @@ function ToDoList() {
         <button className="px-4 py-2 text-white bg-green-600 rounded-md hover:bg-green-700" onClick={addTask}>Add</button>
       </div>
       <ol>
-        {tasks.map((task, index) => <li key={index} className="flex items-center gap-1 px-4 py-2 rounded-md bg-slate-200">
+        {tasks.map((task, index) => <li key={index} className="flex items-center justify-between p-2 mb-2 rounded-md bg-slate-200">
           <span className="mr-4 text-lg">{task}</span>
-          <button className="px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700"><FaArrowUp /></button>
-          <button className="px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700"><FaArrowDown /></button>
-          <button className="px-4 py-2 text-white bg-red-600 rounded-md hover:bg-red-700"><MdDelete /></button>    
+          <div className="flex gap-1">
+            <button className="px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700"><FaArrowUp /></button>
+            <button className="px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700"><FaArrowDown /></button>
+            <button className="px-4 py-2 text-white bg-red-600 rounded-md hover:bg-red-700"><MdDelete /></button>  
+          </div>    
         </li>)}
       </ol>
     </div>
