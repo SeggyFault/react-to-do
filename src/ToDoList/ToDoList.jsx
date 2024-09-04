@@ -5,7 +5,7 @@ import { MdDelete } from "react-icons/md";
 
 function ToDoList() {
 
-  const [tasks, setTasks] = useState(["Do the homework"]);
+  const [tasks, setTasks] = useState(["Procrastinate"]);
   const [newTask, setNewTask] = useState("");
 
   function handleInputChange(event) {
